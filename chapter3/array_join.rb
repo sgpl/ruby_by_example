@@ -1,6 +1,13 @@
 #!/usr/bin/env ruby
 # array_join.rb
 
+# notes: 
+
+# really understand how this program works
+# really understand what the deal with protected is.
+# ruby has 3 access controls: public , private, protected
+
+
 class Array
 
 	def my_join(separator1=',', separator2=' and ')
@@ -20,8 +27,13 @@ class Array
 
 end
 
+
+a = [0,1,2,3,4,5,6]
+puts a.join(',')
+puts a.my_join(',')
+
 =begin
-# how i'd write something like this?
+# how i'd write something like this ?
 
 arr1 = [1,2,3,4,5]
 
