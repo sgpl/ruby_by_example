@@ -1,0 +1,82 @@
+# ch 1
+
+- irb is an ex. of REPL (read eval print loop) environment
+- everything is an object: "Hello World".class gives String
+- object is an instance of a class String (in the above case)
+
+- objects have "methods" that are called on objects
+	eg: some_object.some_method
+- methods are actions that objects can perform. 
+------------
+NOTE 
+This book assumes that you are familiar with object orientation. 
+
+If you’re not, here’s a crash description. An object is a thing. It could be any type of thing. 
+
+Every object is an instance of a class; for example, the objects Glasgow, Cairo, and Buffalo would all be instances of the class City. 
+
+The objects are distinct from each other, but they are the same type of thing. 
+
+Monty Python and The Kids in the Hall would both be instances of the class Comedy Troupe, and so on. 
+
+In Ruby, you will traditionally name instances with all lowercase letters and use underscores in the place of spaces; you will name classes with CamelCase. In actual Ruby code, the class ComedyTroupe would have instances (objects) called monty_python and kids_in_the_hall.
+------------
+
+
+- 100.class => fixnum
+- (100*100).class => bignum
+
+- language designed this way for more effcient memory usage?
+
+>> 10 + "hello" => TypeError
+- example of an 'exception' aka there has been an error
+
+	Casting: 
+	conversion of something from one type to another. 
+
+- to see all methods we ban apply on an object
+	100.methods
+	"Some String".methods
+
+
+## flow control: 
+
+- if is a common example
+	100 if true
+
+The nil value is distinct from all other values. However, when we force Ruby to evaluate nil as a Boolean, it evaluates to false, as shown:
+
+irb(main):015:0> "It's true!" if nil 
+=> nil
+
+- false and nil evaluate to false
+# lots of slightly mind trippy stuff. 
+
+- ruby -h # list of commands that we can use in terminal w/ ruby
+
+--- end of chapter 1-- 
+
+# ch 2
+irb>> t = File.new(ENV['HOME'] + '/ruby/rubyex/new_file.txt', 'w')
+## creates a new file in Home/ruby/.. so essentially replace home with users/sharad
+
+--> 99bottles.rb
+
+
+
+
+
+
+
+
+
+
+--- end of chapter -- 
+--- end of chapter -- 
+--- end of chapter -- 
+--- end of chapter -- 
+--- end of chapter -- 
+--- end of chapter -- 
+--- end of chapter -- 
+
+
